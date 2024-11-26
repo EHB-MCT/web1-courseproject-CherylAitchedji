@@ -1,0 +1,39 @@
+@import url(https://db.onlinewebfonts.com/c/72a681ab4895977fc23fbe7c149455be?family=Helvetica+Rounded);
+@import url(https://db.onlinewebfonts.com/c/bae3d8bd0621c2cc191f2d9926f4b382?family=Helvetica+Rounded+LT+Std+Black);
+
+body {
+  font-family: Helvetica Rounded;
+  margin: 0;
+}
+
+.logo {
+  width: 10%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffc80b;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: "white";
+}
+
+.wrapper-contact {
+  border: solid 5px black;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.bloemetjes {
+  width: 100%;
+}
