@@ -27,13 +27,43 @@ nav ul li a {
   text-decoration: none;
   color: "white";
 }
-
 .wrapper-contact {
-  border: solid 5px black;
   display: flex;
-  align-items: center;
-  margin: 0;
+  justify-content: space-around;
+  margin-top: 5px;
+  margin-bottom: 100px;
+}
+.contacts {
+  border: solid 10px black;
+  border-radius: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 5%;
+}
+.contacts h1 {
+  font-size: 50px;
+}
+
+.contacts h1 {
+  font-size: 33px;
+}
+
+.bloemen {
+  background-color: red;
 }
 .bloemetjes {
   width: 100%;
+  z-index: 1;
+  animation-name: flowers-up;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  transform: translateY(-800px);
+}
+@keyframes flowers-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-800px);
+  }
 }
