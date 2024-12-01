@@ -6,6 +6,7 @@ body {
   margin: 0;
 }
 
+/************************************************ NAVIGATION BAR ***************************************************************/
 .logo {
   width: 10%;
 }
@@ -18,52 +19,84 @@ header {
   background-color: #ffc80b;
 }
 
+.logo {
+  margin-left: 40px;
+}
+
 nav ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: "white";
+  display: inline-block;
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+nav ul li a:hover {
+  background-color: #015599;
+  transform: translateY(-20px);
+}
+
+nav a {
+  background-color: #f26522;
+  padding: 20px;
+  border-radius: 230px;
+  color: white;
+}
+
+/************************************************ CONTACT INFO ***************************************************************/
+.wrapper {
+  height: 932px;
+  overflow: hidden;
 }
 .wrapper-contact {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 5px;
-  margin-bottom: 100px;
+  margin-bottom: 300px;
 }
+
 .contacts {
+  padding-top: 25px;
   border: solid 10px black;
   border-radius: 30px;
-  padding-left: 150px;
-  padding-right: 150px;
-  margin-top: 5%;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 2%;
 }
 .contacts h1 {
-  font-size: 50px;
+  font-size: 60px;
 }
 
-.contacts h1 {
-  font-size: 33px;
+.contacts ul {
+  list-style: none;
+  font-size: 30px;
+  line-height: 50px;
 }
 
-.bloemen {
-  background-color: red;
+.imgContacts {
+  margin-top: 2%;
+  width: 25%;
 }
+
 .bloemetjes {
   width: 100%;
+  align-items: center;
   z-index: 1;
   animation-name: flowers-up;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: ease-in-out;
-  transform: translateY(-800px);
+  transform: translateY(-500px);
 }
 @keyframes flowers-up {
   from {
+    display: none;
     transform: translateY(0);
   }
   to {
-    transform: translateY(-800px);
+    transform: translateY(-500px);
   }
 }
