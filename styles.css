@@ -7,16 +7,14 @@ body {
 }
 
 /************************************************ NAVIGATION BAR ***************************************************************/
-.logo {
-  width: 10%;
-}
 
-header {
+nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffc80b;
+  position: fixed;
 }
 
 .logo {
@@ -47,8 +45,28 @@ nav a {
   color: white;
 }
 
-/***********************************************Vaardigheden******************************************************************/
+/***********************************************HOME PAGE******************************************************************/
+.wrapper-index {
+  height: 100vh;
+  background-image: url(images/index-background.PNG);
+  background-size: cover;
+  top: 0;
+  overflow: hidden;
+}
 
+.index-titel {
+  background-color: #ffc80b;
+}
+
+/***********************************************Vaardigheden******************************************************************/
+.werk-fotos {
+  margin-top: 2%;
+  display: flex;
+}
+
+.werk-fotos img {
+  width: 20%;
+}
 /************************************************ CONTACT INFO ***************************************************************/
 .wrapper {
   height: 932px;
@@ -67,7 +85,7 @@ nav a {
   border-radius: 30px;
   padding-left: 100px;
   padding-right: 100px;
-  margin-top: 2%;
+  margin-top: 10%;
 }
 .contacts h1 {
   font-size: 60px;
@@ -80,7 +98,7 @@ nav a {
 }
 
 .imgContacts {
-  margin-top: 2%;
+  margin-top: 10%;
   width: 25%;
 }
 
@@ -91,7 +109,7 @@ nav a {
   animation-name: flowers-up;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
-  transform: translateY(-750px);
+  transform: translateY(-700px);
 }
 @keyframes flowers-up {
   from {
@@ -99,6 +117,6 @@ nav a {
     transform: translateY(0);
   }
   to {
-    transform: translateY(-750px);
+    transform: translateY(-700px);
   }
 }
