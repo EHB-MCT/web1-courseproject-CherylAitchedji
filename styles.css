@@ -46,21 +46,36 @@ nav a {
 }
 
 /***********************************************HOME PAGE******************************************************************/
-.wrapper-index {
+.background-image-index {
   height: 100vh;
   background-image: url(images/index-background.PNG);
   background-size: cover;
-  top: 0;
   overflow: hidden;
 }
 
+.flex-titel {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
 .index-titel {
-  background-color: #ffc80b;
+  margin-left: 150px;
+}
+
+.index-titel h1,
+h2 {
+  color: aliceblue;
+}
+.index-titel h1 {
+  font-size: 60px;
+}
+
+.index-titel h2 {
+  font-size: 40px;
 }
 
 /***********************************************Vaardigheden******************************************************************/
 .werk-fotos {
-  margin-top: 2%;
   display: flex;
 }
 
