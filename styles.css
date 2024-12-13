@@ -74,6 +74,12 @@ h2 {
   font-size: 40px;
 }
 
+.portfolio {
+  width: 100%;
+  display: flex;
+  margin-top: 2%;
+}
+
 /***********************************************Vaardigheden******************************************************************/
 .werk-fotos {
   display: flex;
@@ -122,7 +128,7 @@ h2 {
   align-items: center;
   z-index: 1;
   animation-name: flowers-up;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   transform: translateY(-700px);
 }
