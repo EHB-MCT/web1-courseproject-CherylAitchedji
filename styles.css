@@ -26,19 +26,19 @@ nav ul li {
   margin-right: 50px;
 }
 
-nav ul li a {
+a {
   text-decoration: none;
   color: "white";
   display: inline-block;
   transition: background-color 0.5s, transform 0.5s;
 }
 
-nav ul li a:hover {
+a:hover {
   background-color: #015599;
   transform: scale(1.3);
 }
 
-nav a {
+a {
   background-color: #f26522;
   padding: 20px;
   border-radius: 230px;
@@ -63,7 +63,8 @@ nav a {
 }
 
 .index-titel h1,
-h2 {
+h2,
+p {
   color: aliceblue;
 }
 .index-titel h1 {
@@ -74,12 +75,63 @@ h2 {
   font-size: 40px;
 }
 
+.project-image {
+  transition: 0.5s;
+}
+.project-image:hover {
+  transform: scale(1.3);
+  z-index: 1;
+}
+.portfolio-titel {
+  text-align: center;
+  margin-top: 4%;
+  color: #1a3a73;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .portfolio {
   width: 100%;
   display: flex;
-  margin-top: 2%;
+  justify-content: space-around;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+.portfolio h3 {
+  color: #1a3a73;
+}
+.portfolio p {
+  color: black;
+}
+.portfolio img {
+  background-color: #ffc80b;
+  border-radius: 30px;
+  padding: 20px;
+}
+.portfolio div {
+  width: 18%;
 }
 
+.introductie {
+  display: flex;
+  justify-content: space-around;
+}
+.introductie-item1 {
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center;
+  width: 50%;
+}
+.introductie-text {
+  margin-top: 100px;
+  border: dashed 10px black;
+  border-radius: 30px;
+  padding: 200px;
+}
+
+.introductie-text h2,
+p {
+  color: black;
+}
 /***********************************************Vaardigheden******************************************************************/
 .werk-fotos {
   display: flex;
@@ -102,7 +154,7 @@ h2 {
 
 .contacts {
   padding-top: 25px;
-  border: solid 10px black;
+  border: dashed 10px black;
   border-radius: 30px;
   padding-left: 100px;
   padding-right: 100px;
