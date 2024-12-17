@@ -15,6 +15,7 @@ nav {
   align-items: center;
   background-color: #ffc80b;
   position: fixed;
+  z-index: 2;
 }
 
 .logo {
@@ -79,7 +80,7 @@ p {
   transition: 0.5s;
 }
 .project-image:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   z-index: 1;
 }
 .portfolio-titel {
@@ -111,21 +112,65 @@ p {
   width: 18%;
 }
 
-.introductie {
+.introductie-item1 {
   display: flex;
   justify-content: space-around;
 }
-.introductie-item1 {
-  margin-left: 70px;
-  margin-right: 70px;
+
+.introductie-item2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.introductie-text {
+  width: 50%;
   text-align: center;
+  margin-top: 150px;
+  margin-left: 60px;
+  border: solid 10px #ffc80b;
+  border-radius: 30px;
+  padding: 100px;
   width: 50%;
 }
-.introductie-text {
-  margin-top: 100px;
-  border: dashed 10px black;
-  border-radius: 30px;
-  padding: 200px;
+
+.image-nijntje-balloon,
+.image-balloon {
+  animation-name: zweef;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: 1;
+  transform: translateY(-30px);
+}
+
+@keyframes zweef {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes draai {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.image-nijntje-balloon:hover {
+  animation-play-state: paused;
+}
+
+.image-balloon:hover {
+  animation-play-state: running;
+  animation: draai 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
 }
 
 .introductie-text h2,
@@ -154,7 +199,7 @@ p {
 
 .contacts {
   padding-top: 25px;
-  border: dashed 10px black;
+  border: solid 10px #ffc80b;
   border-radius: 30px;
   padding-left: 100px;
   padding-right: 100px;
