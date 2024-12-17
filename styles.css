@@ -49,7 +49,6 @@ a {
 /*********************************************FOOTER***********************************************************************/
 footer {
   background-color: #286f2b;
-  margin-top: 80px;
   padding: 20px;
   text-align: center;
 }
@@ -59,6 +58,9 @@ footer p {
 }
 
 /***********************************************HOME PAGE******************************************************************/
+.wrapper-index {
+  background-image: url(images/background_nijntje.png);
+}
 .background-image-index {
   height: 100vh;
   background-image: url(images/index-background.PNG);
@@ -118,10 +120,17 @@ p {
 .portfolio img {
   background-color: #ffc80b;
   border-radius: 30px;
+  padding: 10px;
+}
+.project-1,
+.project-2,
+.project-3 {
+  background-color: #ffc80b;
+  border-radius: 30px;
   padding: 20px;
 }
 .portfolio div {
-  width: 18%;
+  width: 20%;
 }
 
 .introductie-item1 {
@@ -132,6 +141,7 @@ p {
 .introductie-item2 {
   display: flex;
   justify-content: space-around;
+  margin-left: 200px;
 }
 
 .introductie-text {
@@ -140,9 +150,18 @@ p {
   margin-top: 150px;
   margin-left: 60px;
   border: solid 10px #ffc80b;
+  background-color: #015599;
   border-radius: 30px;
   padding: 100px;
   width: 50%;
+}
+
+.introductie-text h2,
+p {
+  color: aliceblue;
+}
+.intro-button:hover {
+  background-color: #ffc80b;
 }
 
 .image-nijntje-balloon,
@@ -185,23 +204,26 @@ p {
   animation-iteration-count: infinite;
 }
 
-.introductie-text h2,
-p {
-  color: black;
+.footer-homepage {
+  margin-top: 120px;
 }
-/***********************************************Vaardigheden******************************************************************/
+/***********************************************VAARDIGHEDEN******************************************************************/
 
-.werk-fotos {
+.landing {
+  margin-top: 150px;
+  margin-left: 40px;
   display: flex;
 }
 
-.werk-fotos img {
-  width: 20%;
+.ervaring {
+  background-color: #f26522;
 }
+
 /************************************************ CONTACT INFO ***************************************************************/
 .wrapper {
-  height: 932px;
+  height: 950px;
   overflow: hidden;
+  background-image: url(images/background_nijntje.png);
 }
 .wrapper-contact {
   display: flex;
@@ -212,6 +234,7 @@ p {
 
 .contacts {
   padding-top: 25px;
+  background-color: #015599;
   border: solid 10px #ffc80b;
   border-radius: 30px;
   padding-left: 100px;
@@ -223,10 +246,12 @@ p {
   transform: scale(1.1);
 }
 .contacts h1 {
+  color: aliceblue;
   font-size: 60px;
 }
 
 .contacts ul {
+  color: aliceblue;
   list-style: none;
   font-size: 30px;
   line-height: 70px;
@@ -243,7 +268,6 @@ p {
 
 .imgContacts:hover {
   animation: bunny-hop 0.5s ease;
-  animation-delay: 1.2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -263,7 +287,7 @@ p {
     transform: translateY(0);
   }
   to {
-    transform: translateY(-80px);
+    transform: translateY(-50px);
   }
 }
 
