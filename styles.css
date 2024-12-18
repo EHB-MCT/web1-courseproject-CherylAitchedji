@@ -185,10 +185,10 @@ p {
 }
 
 @keyframes draai {
-  0% {
+  from {
     transform: rotate(0);
   }
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }
@@ -208,20 +208,87 @@ p {
   margin-top: 120px;
 }
 /***********************************************VAARDIGHEDEN******************************************************************/
-
+.wrapper-vaardigheden {
+  overflow: hidden;
+  background-image: url(images/background_nijntje.png);
+}
 .landing {
+  margin-top: 200px;
+}
+#section1 {
   margin-top: 150px;
-  margin-left: 40px;
-  display: flex;
+}
+h1 {
+  text-align: center;
 }
 
-.ervaring {
+.items-educatie {
+  display: flex;
+  justify-content: space-between;
+}
+.item1-educatie,
+.item2-educatie,
+.item1-ervaring,
+.item2-ervaring,
+.item3-ervaring {
+  background-color: #015599;
+  color: aliceblue;
+  margin: 60px;
+  border-radius: 30px;
+  border: solid 10px #ffc80b;
+  padding: 20px;
+  width: 20%;
+  z-index: 1;
+
+  transition: background-color 0.5s, transform 1s;
+}
+.item1-educatie {
+  margin-left: 400px;
+}
+.item2-educatie {
+  margin-right: 400px;
+}
+.nijntje-run {
+  animation: run 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+.nijntje-run:hover {
+  animation-play-state: paused;
+}
+@keyframes run {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(1500px);
+  }
+}
+
+.item1-educatie:hover,
+.item2-educatie:hover,
+.item1-ervaring:hover,
+.item2-ervaring:hover,
+.item3-ervaring:hover {
+  transform: scale(1.1);
   background-color: #f26522;
+}
+.items-ervaring {
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.5s, transform 1s;
+}
+
+.items-ervaring img {
+  border: solid 10px #ffc80b;
+  border-radius: 30px;
 }
 
 /************************************************ CONTACT INFO ***************************************************************/
 .wrapper {
-  height: 950px;
+  height: 1050px;
   overflow: hidden;
   background-image: url(images/background_nijntje.png);
 }
