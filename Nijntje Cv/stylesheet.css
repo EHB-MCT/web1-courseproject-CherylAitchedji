@@ -30,8 +30,9 @@ body {
   font-size: 17px;
   display: block;
   margin-top: 2rem;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  transition: background-color 0.5s, transform 0.5s;
 }
 
 .topnav a.icon {
@@ -42,14 +43,11 @@ body {
   top: 0;
 }
 
-.topnav a:hover {
+.topnav a:hover,
+.active {
   background-color: #015599;
   color: aliceblue;
-}
-
-.active {
-  background-color: #ffc80b;
-  color: aliceblue;
+  transform: scale(1.2);
 }
 
 @media (min-width: 480px) {
