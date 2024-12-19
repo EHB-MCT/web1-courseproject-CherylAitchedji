@@ -1,0 +1,66 @@
+@import url(https://db.onlinewebfonts.com/c/72a681ab4895977fc23fbe7c149455be?family=Helvetica+Rounded);
+@import url(https://db.onlinewebfonts.com/c/bae3d8bd0621c2cc191f2d9926f4b382?family=Helvetica+Rounded+LT+Std+Black);
+
+body {
+  font-family: Helvetica Rounded;
+  margin: 0;
+  background-image: url(images/background_nijntje.png);
+  background-position: top right;
+}
+
+/***************************NAVBAR*************************/
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffc80b;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: aliceblue;
+  background-color: #f26522;
+  border-radius: 30px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  margin-top: 2rem;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.topnav a.icon {
+  background: #f26522;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #015599;
+  color: aliceblue;
+}
+
+.active {
+  background-color: #ffc80b;
+  color: aliceblue;
+}
+
+@media (min-width: 480px) {
+  .topnav a {
+    display: inline-block;
+  }
+  .topnav #myLinks {
+    display: inline-block !important;
+    float: right;
+  }
+  .topnav a.icon {
+    display: none;
+  }
+}
