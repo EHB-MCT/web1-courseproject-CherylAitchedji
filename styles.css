@@ -61,32 +61,33 @@ footer p {
 .wrapper-index {
   background-image: url(images/background_nijntje.png);
 }
-.background-image-index {
+.header-index {
   height: 100vh;
   background-image: url(images/index-background.PNG);
   background-size: cover;
-  overflow: hidden;
+  width: 100%;
+  background-position: center;
 }
 
-.flex-titel {
+.landing-text-flex {
   display: flex;
   align-items: center;
   height: 100vh;
 }
-.index-titel {
+.landing-index-text {
   margin-left: 150px;
 }
 
-.index-titel h1,
+.landing-index-text h1,
 h2,
 p {
   color: aliceblue;
 }
-.index-titel h1 {
+.landing-index-text h1 {
   font-size: 60px;
 }
 
-.index-titel h2 {
+.landing-index-text h2 {
   font-size: 40px;
 }
 
@@ -118,6 +119,7 @@ p {
   color: black;
 }
 .portfolio img {
+  border: solid 10px #015599;
   background-color: #ffc80b;
   border-radius: 30px;
   padding: 10px;
@@ -126,6 +128,7 @@ p {
 .project-2,
 .project-3 {
   background-color: #ffc80b;
+  border: solid 10px #015599;
   border-radius: 30px;
   padding: 20px;
 }
@@ -207,6 +210,20 @@ p {
 .footer-homepage {
   margin-top: 120px;
 }
+
+@media screen and (max-width: 1920px) {
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
 /***********************************************VAARDIGHEDEN******************************************************************/
 .wrapper-vaardigheden {
   overflow: hidden;
@@ -215,10 +232,19 @@ p {
 .landing {
   margin-top: 200px;
 }
+.image-landing {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  border: solid 10px #ffc80b;
+}
+
 #section1 {
   margin-top: 150px;
 }
-h1 {
+.titel-center {
   text-align: center;
 }
 
@@ -243,7 +269,7 @@ h1 {
   transition: background-color 0.5s, transform 1s;
 }
 .item1-educatie {
-  margin-left: 400px;
+  margin-left: 220px;
 }
 .item2-educatie {
   margin-right: 400px;
@@ -274,6 +300,12 @@ h1 {
 .item3-ervaring:hover {
   transform: scale(1.1);
   background-color: #f26522;
+}
+.item1-ervaring:hover,
+.item2-ervaring:hover,
+.item3-ervaring:hover {
+  transform: scale(1.1);
+  background-color: #286f2b;
 }
 .items-ervaring {
   display: flex;
